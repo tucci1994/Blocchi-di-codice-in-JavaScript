@@ -1,0 +1,29 @@
+
+
+*{box-sizing: border-box;}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heart{
+    background-image: url(logo.png.jfif);
+    position: fixed;
+    top: -1vh;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(105vh)
+    }
+}
